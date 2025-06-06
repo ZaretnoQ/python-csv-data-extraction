@@ -18,3 +18,7 @@ with open('Bestseller - Sheet1.csv', 'r', encoding='utf8') as file:
             book = Book(i[0], sale)
 
     print(f"{book.book} - {book.sale}")
+
+with open('bestseller - info.csv', 'w', newline='') as file:
+    csv_writer = csv.writer(file)
+    csv_writer.writerow([book.book, book.sale])
