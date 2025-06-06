@@ -17,5 +17,4 @@ with open('Bestseller - Sheet1.csv', 'r', encoding='utf8') as file:
         if sale >= book.sale:
             book = Book(i[0], sale)
 
-    #for i in range(len(book_list)):
     print(f"{book.book} - {book.sale}")
